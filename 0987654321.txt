@@ -1,0 +1,14 @@
+#include<iostream>
+#include<conio.h>
+#include<algorithm>
+using namespace std;
+int arr[] = { 11,22,33,44,55,66,77,88 };
+int main()
+{
+    int* ptr;
+    ptr = find(arr, arr + 8, 44);
+    cout << "Pershyj object zi znachennam 44 v pozycii "
+        << (ptr - arr + 1) << endl;
+    _getch();
+    return 0;
+}
